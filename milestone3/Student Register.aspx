@@ -37,10 +37,17 @@
         <asp:TextBox ID="student_faculty" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:CheckBox ID="Gucian" runat="server" Text="Gucian" />
+        
+        <asp:RadioButtonList id="Gucian" runat="server">
+            <asp:ListItem Value=1>Gucian</asp:ListItem>
+            <asp:ListItem Value=0>Non Gucian</asp:ListItem>
+
+         </asp:RadioButtonList>
+        
+        
         <br />
          <br />
-        <asp:Button ID="studentRegister" runat="server" Text="register" />
+        <asp:Button ID="studentRegister" runat="server" Text="register" onclick="studentRegister"/>
 
 
 
@@ -50,3 +57,4 @@
     </form>
 </body>
 </html>
+       
