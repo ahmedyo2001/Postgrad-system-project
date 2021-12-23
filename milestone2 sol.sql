@@ -173,19 +173,55 @@ set @name = CONCAT(@first_name,@last_name)
 insert into Supervisor(id,name,faculty) values(@id,@name,@faculty)
 end
 go
+
 Create proc userLogin
-@id int,
+@email varchar(20),
 @password varchar(20),
-@success bit output
+@success bit output,
+@type varchar(20) output
 as
 begin
 if exists(
-select ID,password
+select *
 from PostGradUser
-where id=@id and password=@password)
+where email=@email and password=@password)
+begin 
 set @success =1
+declare @id int 
+select @id = id from PostGradUser p where p.email= @email and p.password=@password
+set @type='no values'
+	if exists(
+		select * from GucianStudent g where @id= g.id
+	) 
+	set @type= 'Gucian'
+
+	else if exists(
+	select * from Examiner g where @id= g.id
+	)
+	set @type= 'Examiner'
+
+	else if exists(
+	select * from Admin g where @id= g.id
+	)
+	set @type= 'Admin'
+
+
+	else if exists(
+	select * from Supervisor g where @id= g.id
+	)
+	set @type= 'Supervisor'
+
+
+	else if exists(
+	select * from NonGucianStudent g where @id= g.id
+	)
+	set @type= 'NonGucian'
+	
+
+end
 else
 set @success=0
+
 end
 go
 create proc addMobile
@@ -759,4 +795,4 @@ delete from Supervisor where id in (select id from deleted)
 delete from PostGradUser where id in (select id from deleted)
 
 
-select * from NonGucianStudent
+select * from GucianStudent

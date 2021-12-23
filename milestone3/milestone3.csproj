@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="add mobile.aspx" />
     <Content Include="examiner login.aspx" />
+    <Content Include="landing page.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Student Register.aspx" />
     <Content Include="Supervisor Register.aspx" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="examiner login.aspx.designer.cs">
       <DependentUpon>examiner login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="landing page.aspx.cs">
+      <DependentUpon>landing page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="landing page.aspx.designer.cs">
+      <DependentUpon>landing page.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

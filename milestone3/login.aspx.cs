@@ -21,23 +21,52 @@ namespace milestone3
             string connstr = WebConfigurationManager.ConnectionStrings["milestone3"].ToString();
             SqlConnection conn = new SqlConnection(connstr);
 
-            int id = Int16.Parse(login_id.Text);
+            string email = login_id.Text;
             string pass = login_password.Text;
 
             SqlCommand loginproc = new SqlCommand("userLogin",conn);
             loginproc.CommandType = CommandType.StoredProcedure;
-            loginproc.Parameters.Add(new SqlParameter("@id ", id ));
+            loginproc.Parameters.Add(new SqlParameter("@email ", email ));
             loginproc.Parameters.Add(new SqlParameter("@password", pass));
 
             SqlParameter success = loginproc.Parameters.Add("@success", SqlDbType.Int);
+            SqlParameter type = loginproc.Parameters.Add("@type", SqlDbType.VarChar,20);
             success.Direction = ParameterDirection.Output;
+            type.Direction = ParameterDirection.Output;
+            
             conn.Open();
             loginproc.ExecuteNonQuery();
             conn.Close();
+            string type1 = type.Value.ToString();
 
             if (success.Value.ToString() == "1")
             {
-                Response.Write("hello");
+                /*
+                if (type1 == "Gucian")
+                {
+                    //Response.Redirect("gucian")
+                }
+                if (type1 == "NonGucian")
+                {
+                    //Response.Redirect("gucian")
+                }
+                if (type1 == "Admin")
+                {
+                    //Response.Redirect("admin")
+                }
+                if (type1 == "Supervisor")
+                {
+                    //Response.Redirect("supervisor")
+                }
+
+                if (type1 == "Examiner")
+                {
+                    //Response.Redirect("Examiner")
+                }
+                */
+
+
+
             }
         }
     }
