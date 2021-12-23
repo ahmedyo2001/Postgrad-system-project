@@ -36,7 +36,7 @@
         <br />
 
          <br />
-        <asp:Button ID="supervisorRegister" runat="server" Text="register" />
+        <asp:Button ID="supervisorRegister" runat="server" Text="register" OnClick="supReg" />
     </form>
 </body>
 </html>

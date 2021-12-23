@@ -44,8 +44,9 @@ namespace milestone3
             conn.Open();
             registerproc.ExecuteNonQuery();
             conn.Close();
+            Response.Redirect("login.aspx");
 
-           
+
         }
     }
 }
