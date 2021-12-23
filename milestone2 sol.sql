@@ -757,3 +757,6 @@ delete from GUCianStudentRegisterThesis where supid in (select id from deleted)
 delete from NonGUCianStudentRegisterThesis where supid in (select id from deleted)
 delete from Supervisor where id in (select id from deleted)
 delete from PostGradUser where id in (select id from deleted)
+
+
+select * from GucianStudent
