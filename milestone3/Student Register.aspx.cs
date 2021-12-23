@@ -31,21 +31,21 @@ namespace milestone3
             int gucian =Int16.Parse(Gucian.SelectedItem.Value.ToString());
 
 
-            SqlCommand loginproc = new SqlCommand("userLogin", conn);
-            loginproc.CommandType = CommandType.StoredProcedure;
-            loginproc.Parameters.Add(new SqlParameter("@id ", first_name));
-            loginproc.Parameters.Add(new SqlParameter("@password", last_name));
+            SqlCommand registerproc = new SqlCommand("studentRegister", conn);
+            registerproc.CommandType = CommandType.StoredProcedure;
+            registerproc.Parameters.Add(new SqlParameter("@first_name ", first_name));
+            registerproc.Parameters.Add(new SqlParameter("@last_name", last_name));
+            registerproc.Parameters.Add(new SqlParameter("@email", email));
+            registerproc.Parameters.Add(new SqlParameter("@password", password));
+            registerproc.Parameters.Add(new SqlParameter("@address", address));
+            registerproc.Parameters.Add(new SqlParameter("@faculty", faculty));
+            registerproc.Parameters.Add(new SqlParameter("@gucian", gucian));
 
-            SqlParameter success = loginproc.Parameters.Add("@success", SqlDbType.Int);
-            success.Direction = ParameterDirection.Output;
             conn.Open();
-            loginproc.ExecuteNonQuery();
+            registerproc.ExecuteNonQuery();
             conn.Close();
 
-            if (success.Value.ToString() == "1")
-            {
-                Response.Write("hello");
-            }
+           
         }
     }
 }

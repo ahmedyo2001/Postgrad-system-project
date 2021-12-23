@@ -47,7 +47,7 @@
         
         <br />
          <br />
-        <asp:Button ID="studentRegister" runat="server" Text="register" onclick="studentRegister"/>
+        <asp:Button ID="studentRegister" runat="server" Text="register" onclick="StudentRegister"/>
 
 
 
