@@ -19,17 +19,7 @@ namespace milestone3
 
         protected void ViewStudentClick(object sender, EventArgs e)
         {
-            string connstr = WebConfigurationManager.ConnectionStrings["milestone3"].ToString();
-            SqlConnection conn = new SqlConnection(connstr);
-            SqlCommand SupViewProfileproc = new SqlCommand("ViewSupStudentsYears", conn);
-            SupViewProfileproc.CommandType = CommandType.StoredProcedure;
-            int id = Int16.Parse(Session["id"].ToString());
-            SupViewProfileproc.Parameters.Add(new SqlParameter("@supervisorID ", id));
-
-            conn.Open();
-            SupViewProfileproc.ExecuteNonQuery();
-            conn.Close();
-            Response.Redirect("Supervisor views student.aspx");
+            Response.Redirect("Supervisor views students.aspx");
         }
     }
 }

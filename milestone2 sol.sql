@@ -798,5 +798,11 @@ delete from NonGUCianStudentRegisterThesis where supid in (select id from delete
 delete from Supervisor where id in (select id from deleted)
 delete from PostGradUser where id in (select id from deleted)
 
-
-select * from GUCStudentPhoneNumber
+select * from Supervisor
+select * from GucianStudent
+select * from thesis
+select * from payment
+insert into Thesis values('enging','ho','the anatomy','1/1/2020','1/1/2021','3/1/2021', 2.2,1,3)
+insert into Payment values (5000, 3, 15.5)
+insert into GUCianStudentRegisterThesis values (1,2,6)
+select * from GUCianStudentRegisterThesis
