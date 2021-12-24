@@ -41,29 +41,29 @@ namespace milestone3
 
             if (success.Value.ToString() == "1")
             {
-                /*
+                
                 if (type1 == "Gucian")
                 {
-                    //Response.Redirect("gucian")
+                    Response.Redirect("Gucian Main.aspx");
                 }
                 if (type1 == "NonGucian")
                 {
-                    //Response.Redirect("gucian")
+                    Response.Redirect("NonGucian Main.aspx");
                 }
                 if (type1 == "Admin")
                 {
-                    //Response.Redirect("admin")
+                    Response.Redirect("Admin Main.aspx");
                 }
                 if (type1 == "Supervisor")
                 {
-                    //Response.Redirect("supervisor")
+                    Response.Redirect("Supervisor Main.aspx");
                 }
 
                 if (type1 == "Examiner")
                 {
-                    //Response.Redirect("Examiner")
+                    Response.Redirect("Examiner Main.aspx");
                 }
-                */
+                
 
 
 
