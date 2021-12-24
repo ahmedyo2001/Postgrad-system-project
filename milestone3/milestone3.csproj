@@ -68,10 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="add mobile.aspx" />
+    <Content Include="Admin Main.aspx" />
     <Content Include="examiner login.aspx" />
+    <Content Include="Examiner Main.aspx" />
+    <Content Include="Gucian Main.aspx" />
     <Content Include="landing page.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="NonGucian Main.aspx" />
     <Content Include="Student Register.aspx" />
+    <Content Include="Supervisor Main.aspx" />
     <Content Include="Supervisor Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -83,12 +88,33 @@
     <Compile Include="add mobile.aspx.designer.cs">
       <DependentUpon>add mobile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin Main.aspx.cs">
+      <DependentUpon>Admin Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Main.aspx.designer.cs">
+      <DependentUpon>Admin Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="examiner login.aspx.cs">
       <DependentUpon>examiner login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="examiner login.aspx.designer.cs">
       <DependentUpon>examiner login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examiner Main.aspx.cs">
+      <DependentUpon>Examiner Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examiner Main.aspx.designer.cs">
+      <DependentUpon>Examiner Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gucian Main.aspx.cs">
+      <DependentUpon>Gucian Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gucian Main.aspx.designer.cs">
+      <DependentUpon>Gucian Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="landing page.aspx.cs">
       <DependentUpon>landing page.aspx</DependentUpon>
@@ -104,6 +130,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NonGucian Main.aspx.cs">
+      <DependentUpon>NonGucian Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NonGucian Main.aspx.designer.cs">
+      <DependentUpon>NonGucian Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student Register.aspx.cs">
       <DependentUpon>Student Register.aspx</DependentUpon>
@@ -111,6 +144,13 @@
     </Compile>
     <Compile Include="Student Register.aspx.designer.cs">
       <DependentUpon>Student Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supervisor Main.aspx.cs">
+      <DependentUpon>Supervisor Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supervisor Main.aspx.designer.cs">
+      <DependentUpon>Supervisor Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Supervisor Register.aspx.cs">
       <DependentUpon>Supervisor Register.aspx</DependentUpon>
