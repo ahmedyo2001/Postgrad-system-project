@@ -799,4 +799,4 @@ delete from Supervisor where id in (select id from deleted)
 delete from PostGradUser where id in (select id from deleted)
 
 
-select * from GucianStudent
+select * from GUCStudentPhoneNumber
