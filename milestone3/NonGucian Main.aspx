@@ -9,8 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="Non Gucian Main Page"></asp:Label>
-        <div>
-        </div>
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Add Phone Number" onclick="mobile_red"/>
+        
     </form>
 </body>
 </html>

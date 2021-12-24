@@ -43,7 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EO.Base, Version=21.3.18.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.WebBrowser.21.3.18\lib\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=21.3.18.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.WebBrowser.21.3.18\lib\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=21.3.18.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.WebBrowser.21.3.18\lib\EO.WebEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,6 +71,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -68,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="add mobile.aspx" />
+    <Content Include="Add Phone Page.aspx" />
     <Content Include="Admin Main.aspx" />
     <Content Include="examiner login.aspx" />
     <Content Include="Examiner Main.aspx" />
@@ -87,6 +100,13 @@
     </Compile>
     <Compile Include="add mobile.aspx.designer.cs">
       <DependentUpon>add mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add Phone Page.aspx.cs">
+      <DependentUpon>Add Phone Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Phone Page.aspx.designer.cs">
+      <DependentUpon>Add Phone Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin Main.aspx.cs">
       <DependentUpon>Admin Main.aspx</DependentUpon>

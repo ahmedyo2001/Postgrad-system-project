@@ -57,3 +57,9 @@ C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\obj\Debug\mile
 C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\obj\Debug\milestone3.csproj.CopyComplete
 C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\obj\Debug\milestone3.dll
 C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\obj\Debug\milestone3.pdb
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.Base.dll
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.WebBrowser.dll
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.WebEngine.dll
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.Base.xml
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.WebBrowser.xml
+C:\Users\admin\Desktop\ahmed\projects\db m3\milestone3\milestone3\bin\EO.WebEngine.xml
