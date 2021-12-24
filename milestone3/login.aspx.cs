@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Web.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows;
+using EO.WebBrowser.DOM;
 
 namespace milestone3
 {
@@ -30,14 +32,18 @@ namespace milestone3
             loginproc.Parameters.Add(new SqlParameter("@password", pass));
 
             SqlParameter success = loginproc.Parameters.Add("@success", SqlDbType.Int);
+            SqlParameter id = loginproc.Parameters.Add("@id", SqlDbType.Int);
             SqlParameter type = loginproc.Parameters.Add("@type", SqlDbType.VarChar,20);
             success.Direction = ParameterDirection.Output;
             type.Direction = ParameterDirection.Output;
+            id.Direction = ParameterDirection.Output;
             
             conn.Open();
             loginproc.ExecuteNonQuery();
             conn.Close();
             string type1 = type.Value.ToString();
+            Session["id"] = Int16.Parse(id.Value.ToString());
+
 
             if (success.Value.ToString() == "1")
             {

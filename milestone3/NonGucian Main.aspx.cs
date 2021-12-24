@@ -13,5 +13,10 @@ namespace milestone3
         {
 
         }
+
+        protected void mobile_red(object sender, EventArgs e)
+        {
+            Response.Redirect("Add Phone Page.aspx");
+        }
     }
 }

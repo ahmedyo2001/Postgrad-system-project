@@ -18,6 +18,8 @@ faculty varchar(30),
 address varchar(50),
 GPA decimal(3,2),
 undergradID int
+
+
 )
 CREATE TABLE NonGucianStudent(
 id int primary key foreign key references PostGradUser on delete cascade on update cascade,
@@ -178,7 +180,8 @@ Create proc userLogin
 @email varchar(20),
 @password varchar(20),
 @success bit output,
-@type varchar(20) output
+@type varchar(20) output,
+@id int output
 as
 begin
 if exists(
@@ -187,33 +190,34 @@ from PostGradUser
 where email=@email and password=@password)
 begin 
 set @success =1
-declare @id int 
-select @id = id from PostGradUser p where p.email= @email and p.password=@password
+declare @temp int 
+select @temp = id from PostGradUser p where p.email= @email and p.password=@password
 set @type='no values'
+set @id=@temp
 	if exists(
-		select * from GucianStudent g where @id= g.id
+		select * from GucianStudent g where @temp= g.id
 	) 
 	set @type= 'Gucian'
 
 	else if exists(
-	select * from Examiner g where @id= g.id
+	select * from Examiner g where @temp= g.id
 	)
 	set @type= 'Examiner'
 
 	else if exists(
-	select * from Admin g where @id= g.id
+	select * from Admin g where @temp= g.id
 	)
 	set @type= 'Admin'
 
 
 	else if exists(
-	select * from Supervisor g where @id= g.id
+	select * from Supervisor g where @temp= g.id
 	)
 	set @type= 'Supervisor'
 
 
 	else if exists(
-	select * from NonGucianStudent g where @id= g.id
+	select * from NonGucianStudent g where @temp= g.id
 	)
 	set @type= 'NonGucian'
 	
