@@ -799,4 +799,30 @@ delete from Supervisor where id in (select id from deleted)
 delete from PostGradUser where id in (select id from deleted)
 
 
-select * from GucianStudent
+select * from GUCStudentPhoneNumber
+go
+create proc examinerRegister
+ @ExaminerName varchar(20),@Password varchar(30), @National bit, @fieldOfWork varchar(20),@email varchar(50)
+as
+insert into PostGradUser values(@email,@Password)
+declare @id int
+set @id = SCOPE_IDENTITY()
+insert into Examiner values(@id,@ExaminerName,@fieldOfWork,@National)
+
+drop proc examinerRegister
+
+
+
+
+
+insert into PostGradUser(email,password)
+values(@email,@password)
+declare @id int
+SELECT @id=SCOPE_IDENTITY()
+if(@Gucian=1)
+insert into GucianStudent(id,firstName,lastName,faculty,address) values(@id,@first_name,@last_name,@faculty,@address)
+else
+insert into NonGucianStudent(id,firstName,lastName,faculty,address) values(@id,@first_name,@last_name,@faculty,@address)
+end
+
+

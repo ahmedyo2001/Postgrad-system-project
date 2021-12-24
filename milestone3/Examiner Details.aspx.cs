@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace milestone3
 {
-    public partial class Examiner_Main : System.Web.UI.Page
+    public partial class Examiner_Details : System.Web.UI.Page
     {
-        protected void ExaminerRegister(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
 
         }

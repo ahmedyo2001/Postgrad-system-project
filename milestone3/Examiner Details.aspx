@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Examiner Main.aspx.cs" Inherits="milestone3.Examiner_Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Examiner Details.aspx.cs" Inherits="milestone3.Examiner_Details" %>
 
 <!DOCTYPE html>
 
@@ -8,9 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
-     
+      
+
+
+
+
     </form>
 </body>
 </html>

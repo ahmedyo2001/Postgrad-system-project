@@ -82,6 +82,7 @@
     <Content Include="add mobile.aspx" />
     <Content Include="Add Phone Page.aspx" />
     <Content Include="Admin Main.aspx" />
+    <Content Include="Examiner Details.aspx" />
     <Content Include="examiner login.aspx" />
     <Content Include="Examiner Main.aspx" />
     <Content Include="Gucian Main.aspx" />
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="Admin Main.aspx.designer.cs">
       <DependentUpon>Admin Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examiner Details.aspx.cs">
+      <DependentUpon>Examiner Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examiner Details.aspx.designer.cs">
+      <DependentUpon>Examiner Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="examiner login.aspx.cs">
       <DependentUpon>examiner login.aspx</DependentUpon>
