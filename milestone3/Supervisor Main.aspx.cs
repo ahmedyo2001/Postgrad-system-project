@@ -21,5 +21,9 @@ namespace milestone3
         {
             Response.Redirect("Supervisor views students.aspx");
         }
+        protected void ViewStudentPublications(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewStudentPublication.aspx");
+        }
     }
 }

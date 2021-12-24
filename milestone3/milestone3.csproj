@@ -92,6 +92,7 @@
     <Content Include="Supervisor Main.aspx" />
     <Content Include="Supervisor Register.aspx" />
     <Content Include="Supervisor views students.aspx" />
+    <Content Include="ViewStudentPublication.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +187,13 @@
     </Compile>
     <Compile Include="Supervisor views students.aspx.designer.cs">
       <DependentUpon>Supervisor views students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudentPublication.aspx.cs">
+      <DependentUpon>ViewStudentPublication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStudentPublication.aspx.designer.cs">
+      <DependentUpon>ViewStudentPublication.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
