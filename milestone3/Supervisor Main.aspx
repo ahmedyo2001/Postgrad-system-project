@@ -11,6 +11,7 @@
         <asp:Label ID="Label1" runat="server" Text="Supervisor Main Page"></asp:Label>
         <div>
         </div>
+        <asp:Button ID="ViewStudents" runat="server" OnClick="ViewStudentClick" Text="View Students" />
     </form>
 </body>
 </html>
