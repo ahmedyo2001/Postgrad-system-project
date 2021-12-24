@@ -12,6 +12,11 @@
         <div>
         </div>
         <asp:Button ID="ViewStudents" runat="server" OnClick="ViewStudentClick" Text="View Students" />
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="ViewStudentPublication" runat="server" OnClick="ViewStudentPublications" Text="ViewStudentPublication" />
+        </p>
     </form>
-</body>
+</body>"
 </html>
