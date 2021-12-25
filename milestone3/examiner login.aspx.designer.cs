@@ -105,13 +105,13 @@ namespace milestone3
         protected global::System.Web.UI.WebControls.TextBox examiner_field_of_work;
 
         /// <summary>
-        /// examiner_Is_National control.
+        /// isNational control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox examiner_Is_National;
+        protected global::System.Web.UI.WebControls.RadioButtonList isNational;
 
         /// <summary>
         /// examinerRegister control.

@@ -30,11 +30,15 @@
         <br />
         <asp:TextBox ID="examiner_field_of_work" runat="server"></asp:TextBox>
         <br />
-        <br />
-        <asp:CheckBox ID="examiner_Is_National" runat="server" Text="National" />
+    <br />
+        <asp:RadioButtonList id="isNational" runat="server">
+            <asp:ListItem Value=1>National</asp:ListItem>
+            <asp:ListItem Value=0>InterNational</asp:ListItem>
+
+         </asp:RadioButtonList>
         <br />
          <br />
-        <asp:Button ID="examinerRegister" runat="server" Text="register" />
+        <asp:Button ID="examinerRegister" runat="server" Text="register" onclick="ExaminerRegister" />
     </form>
 </body>
 </html>

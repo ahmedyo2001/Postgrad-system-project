@@ -806,3 +806,12 @@ insert into Thesis values('enging','ho','the anatomy','1/1/2020','1/1/2021','3/1
 insert into Payment values (5000, 3, 15.5)
 insert into GUCianStudentRegisterThesis values (1,2,6)
 select * from GUCianStudentRegisterThesis
+
+go
+create proc examinerRegister
+ @ExaminerName varchar(20),@Password varchar(30), @National bit, @fieldOfWork varchar(20),@email varchar(50)
+as
+insert into PostGradUser values(@email,@Password)
+declare @id int
+set @id = SCOPE_IDENTITY()
+insert into Examiner values(@id,@ExaminerName,@fieldOfWork,@National)
