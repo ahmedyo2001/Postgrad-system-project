@@ -9,7 +9,11 @@
 *.dll.config
 *.cache
 *.suo
-
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
 ####################
 # VS Upgrade stuff #
 ####################
@@ -18,9 +22,6 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
-milestone3/obj/
-milestone3/bin/
-.vs/
 bin/
 obj/
 TestResults/
@@ -72,4 +73,12 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
-.vs/
+.vs/milestone3/config/applicationhost.config
+.vs/milestone3/v16/.suo
+milestone3/bin/milestone3.dll
+milestone3/bin/milestone3.pdb
+milestone3/obj/debug/DesignTimeResolveAssemblyReferenceInput.cache
+milestone3/obj/debug/milestone3.csproj.CoreCompileInputs.cache
+milestone3/obj/debug/milestone3.csproj.FileListAbsolute.txt
+milestone3/obj/debug/milestone3.dll
+milestone3/obj/debug/milestone3.pdb
