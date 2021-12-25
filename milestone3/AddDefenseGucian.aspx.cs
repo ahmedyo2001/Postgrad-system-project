@@ -35,7 +35,7 @@ namespace milestone3
             AddDefenseGucianproc.Parameters.Add(new SqlParameter("@ThesisSerialNo ", ThesisSerialno));
             AddDefenseGucianproc.Parameters.Add(new SqlParameter("@DefenseDate", DefenseDate));
             AddDefenseGucianproc.Parameters.Add(new SqlParameter("@DefenseLocation", DefenseLocation));
-            //fddddd
+            //fddddddffegf
 
 
             conn.Open();
