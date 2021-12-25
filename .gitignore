@@ -18,6 +18,9 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
+milestone3/obj/
+milestone3/bin/
+.vs/
 bin/
 obj/
 TestResults/
