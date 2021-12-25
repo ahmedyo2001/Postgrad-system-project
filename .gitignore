@@ -77,8 +77,8 @@ _[Ss]cripts
 .vs/milestone3/v16/.suo
 milestone3/bin/milestone3.dll
 milestone3/bin/milestone3.pdb
-milestone3/obj/debug/DesignTimeResolveAssemblyReferenceInput.cache
-milestone3/obj/debug/milestone3.csproj.CoreCompileInputs.cache
-milestone3/obj/debug/milestone3.csproj.FileListAbsolute.txt
-milestone3/obj/debug/milestone3.dll
-milestone3/obj/debug/milestone3.pdb
+milestone3/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+milestone3/obj/Debug/milestone3.csproj.CoreCompileInputs.cache
+milestone3/obj/Debug/milestone3.csproj.FileListAbsolute.txt
+milestone3/obj/Debug/milestone3.dll
+milestone3/obj/Debug/milestone3.pdb
