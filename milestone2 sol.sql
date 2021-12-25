@@ -802,7 +802,12 @@ select * from Supervisor
 select * from GucianStudent
 select * from thesis
 select * from payment
+select * from Publication
+select * from ThesisHasPublication
 insert into Thesis values('enging','ho','the anatomy','1/1/2020','1/1/2021','3/1/2021', 2.2,1,3)
 insert into Payment values (5000, 3, 15.5)
 insert into GUCianStudentRegisterThesis values (1,2,6)
 select * from GUCianStudentRegisterThesis
+insert into Publication values('craziness', '5/1/2020', 'nasr city', 1, 'Al masa hotel')
+insert into ThesisHasPublication values (6,1)
+select * from defense

@@ -81,6 +81,10 @@
   <ItemGroup>
     <Content Include="add mobile.aspx" />
     <Content Include="Add Phone Page.aspx" />
+    <Content Include="AddDefense.aspx" />
+    <Content Include="AddDefenseGucian.aspx" />
+    <Content Include="AddDefenseNonGucian.aspx" />
+    <Content Include="AddExaminer.aspx" />
     <Content Include="Admin Main.aspx" />
     <Content Include="examiner login.aspx" />
     <Content Include="Examiner Main.aspx" />
@@ -93,6 +97,7 @@
     <Content Include="Supervisor Register.aspx" />
     <Content Include="Supervisor views students.aspx" />
     <Content Include="ViewStudentPublication.aspx" />
+    <Content Include="ViewStudentPublicationFinal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +114,34 @@
     </Compile>
     <Compile Include="Add Phone Page.aspx.designer.cs">
       <DependentUpon>Add Phone Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDefense.aspx.cs">
+      <DependentUpon>AddDefense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDefense.aspx.designer.cs">
+      <DependentUpon>AddDefense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDefenseGucian.aspx.cs">
+      <DependentUpon>AddDefenseGucian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDefenseGucian.aspx.designer.cs">
+      <DependentUpon>AddDefenseGucian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddDefenseNonGucian.aspx.cs">
+      <DependentUpon>AddDefenseNonGucian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDefenseNonGucian.aspx.designer.cs">
+      <DependentUpon>AddDefenseNonGucian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddExaminer.aspx.cs">
+      <DependentUpon>AddExaminer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddExaminer.aspx.designer.cs">
+      <DependentUpon>AddExaminer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin Main.aspx.cs">
       <DependentUpon>Admin Main.aspx</DependentUpon>
@@ -194,6 +227,13 @@
     </Compile>
     <Compile Include="ViewStudentPublication.aspx.designer.cs">
       <DependentUpon>ViewStudentPublication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudentPublicationFinal.aspx.cs">
+      <DependentUpon>ViewStudentPublicationFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStudentPublicationFinal.aspx.designer.cs">
+      <DependentUpon>ViewStudentPublicationFinal.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
