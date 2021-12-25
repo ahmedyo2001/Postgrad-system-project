@@ -25,5 +25,13 @@ namespace milestone3
         {
             Response.Redirect("ViewStudentPublication.aspx");
         }
+        protected void AddDefense(object sender, EventArgs e)
+        {
+            Response.Redirect("AddDefense.aspx");
+        }
+        protected void AddExaminer(object sender, EventArgs e)
+        {
+            Response.Redirect("AddExaminer.aspx");
+        }
     }
 }
