@@ -8,12 +8,12 @@
 *.pdb
 *.dll.config
 *.cache
-.suo
+*.suo
 # Include dlls if they’re in the NuGet packages directory
-!/packages//lib/.dll
-!/packages//lib//.dll
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
 # Include dlls if they're in the CommonReferences directory
-!CommonReferences/.dll
+!*CommonReferences/*.dll
 ####################
 # VS Upgrade stuff #
 ####################
@@ -28,12 +28,12 @@ TestResults/
 ###################
 # Web publish log #
 ###################
-.Publish.xml
+*.Publish.xml
 #############
 # Resharper #
 #############
-/_ReSharper.
-.ReSharper.
+/_ReSharper.*
+*.ReSharper.*
 ############
 # Packages #
 ############
@@ -54,7 +54,7 @@ TestResults/
 *.sqlite
 # OS generated files #
 ######################
-.DSStore?
+.DS_Store?
 ehthumbs.db
 Icon?
 Thumbs.db
@@ -64,10 +64,10 @@ Thumbs.db
 *.suo
 *.user
 *.[Cc]ache
-[Rr]esharper
+*[Rr]esharper*
 packages
 NuGet.exe
-[Ss]cripts
+_[Ss]cripts
 *.exe
 *.dll
 *.nupkg
