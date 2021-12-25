@@ -18,5 +18,10 @@ namespace milestone3
         {
             Response.Redirect("Add Phone Page.aspx");
         }
+
+        protected void skip(object sender, EventArgs e)
+        {
+            Response.Redirect("Gucian_home.aspx");
+        }
     }
 }

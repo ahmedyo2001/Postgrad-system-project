@@ -84,10 +84,15 @@
     <Content Include="Admin Main.aspx" />
     <Content Include="examiner login.aspx" />
     <Content Include="Examiner Main.aspx" />
+    <Content Include="Gucain_publication.aspx" />
     <Content Include="Gucian Main.aspx" />
+    <Content Include="Gucian_home.aspx" />
+    <Content Include="Gucian_view_info.aspx" />
     <Content Include="landing page.aspx" />
+    <Content Include="list_thesis_Gucian.aspx" />
     <Content Include="login.aspx" />
     <Content Include="NonGucian Main.aspx" />
+    <Content Include="progress_report_Gucian.aspx" />
     <Content Include="Student Register.aspx" />
     <Content Include="Supervisor Main.aspx" />
     <Content Include="Supervisor Register.aspx" />
@@ -129,6 +134,13 @@
     <Compile Include="Examiner Main.aspx.designer.cs">
       <DependentUpon>Examiner Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Gucain_publication.aspx.cs">
+      <DependentUpon>Gucain_publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gucain_publication.aspx.designer.cs">
+      <DependentUpon>Gucain_publication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Gucian Main.aspx.cs">
       <DependentUpon>Gucian Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,12 +148,33 @@
     <Compile Include="Gucian Main.aspx.designer.cs">
       <DependentUpon>Gucian Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Gucian_home.aspx.cs">
+      <DependentUpon>Gucian_home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gucian_home.aspx.designer.cs">
+      <DependentUpon>Gucian_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gucian_view_info.aspx.cs">
+      <DependentUpon>Gucian_view_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gucian_view_info.aspx.designer.cs">
+      <DependentUpon>Gucian_view_info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="landing page.aspx.cs">
       <DependentUpon>landing page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="landing page.aspx.designer.cs">
       <DependentUpon>landing page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="list_thesis_Gucian.aspx.cs">
+      <DependentUpon>list_thesis_Gucian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="list_thesis_Gucian.aspx.designer.cs">
+      <DependentUpon>list_thesis_Gucian.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -156,6 +189,13 @@
     </Compile>
     <Compile Include="NonGucian Main.aspx.designer.cs">
       <DependentUpon>NonGucian Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="progress_report_Gucian.aspx.cs">
+      <DependentUpon>progress_report_Gucian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="progress_report_Gucian.aspx.designer.cs">
+      <DependentUpon>progress_report_Gucian.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student Register.aspx.cs">

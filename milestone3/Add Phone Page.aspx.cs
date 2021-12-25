@@ -8,7 +8,7 @@ using System.Web.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows;
-using EO.WebBrowser.DOM;
+
 
 namespace milestone3
 {
@@ -30,9 +30,18 @@ namespace milestone3
             loginproc.Parameters.Add(new SqlParameter("@ID ", id));
             loginproc.Parameters.Add(new SqlParameter("@mobile_number", phone));
 
+            
+
             conn.Open();
             loginproc.ExecuteNonQuery();
             conn.Close();
+
+            Response.Redirect("Gucian_home.aspx");
+
+
+
+
         }
+  
     }
 }

@@ -1,4 +1,4 @@
-﻿CREATE DATABASE m2;
+﻿CREATE DATABASE m2
 go
 use m2;
 CREATE TABLE PostGradUser(
@@ -800,3 +800,8 @@ delete from PostGradUser where id in (select id from deleted)
 
 
 select * from GucianStudent
+select * from PostGradUser
+
+insert into PostGradUser values('marwan@hotmail.com','123')
+insert into GucianStudent(id,firstName,lastName,faculty,GPA,undergradID,type,address)
+values(2,'marwan','ashraf','eng',1.1,16200,'phd','nasrcity')

@@ -12,6 +12,10 @@
             <asp:Label ID="Label1" runat="server" Text="Gucian Student Main Page"></asp:Label>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Add Mobile" onclick="mobile_red"/>
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Skip" onclick="skip"/>
+
     </form>
 </body>
 </html>
