@@ -16,7 +16,12 @@ namespace milestone3
 
         protected void mobile_red(object sender, EventArgs e)
         {
-            Response.Redirect("Add Phone Page.aspx");
+            Response.Redirect("Add_Phone_NonGucian.aspx");
+        }
+
+        protected void skip(object sender, EventArgs e)
+        {
+            Response.Redirect("NonGucian_home.aspx");
         }
     }
 }

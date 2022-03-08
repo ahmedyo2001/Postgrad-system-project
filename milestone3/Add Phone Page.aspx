@@ -14,12 +14,11 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Phone Number"></asp:Label>
         <br />
-        <asp:TextBox ID="Phone_Number" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Phone_Number" runat="server" TextMode="Phone"></asp:TextBox>
         <br />
         <br />
 
         <asp:Button ID="Button1" runat="server" Text="Add Phone" OnClick="add_phone" />
-        =
-    </form>
+        &nbsp;</form>
 </body>
 </html>

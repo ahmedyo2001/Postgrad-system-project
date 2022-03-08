@@ -21,23 +21,29 @@ namespace milestone3
 
         protected void add_phone(object sender, EventArgs e)
         {
-            string phone = Phone_Number.Text;
-            string connstr = WebConfigurationManager.ConnectionStrings["milestone3"].ToString();
-            SqlConnection conn = new SqlConnection(connstr);
-            SqlCommand loginproc = new SqlCommand("addMobile", conn);
-            loginproc.CommandType = CommandType.StoredProcedure;
-            int id = Int16.Parse(Session["id"].ToString());
-            loginproc.Parameters.Add(new SqlParameter("@ID ", id));
-            loginproc.Parameters.Add(new SqlParameter("@mobile_number", phone));
+            try
+            {
+                string phone = Phone_Number.Text;
+                string connstr = WebConfigurationManager.ConnectionStrings["milestone3"].ToString();
+                SqlConnection conn = new SqlConnection(connstr);
+                SqlCommand loginproc = new SqlCommand("addMobile", conn);
+                loginproc.CommandType = CommandType.StoredProcedure;
+                int id = Int16.Parse(Session["id"].ToString());
+                loginproc.Parameters.Add(new SqlParameter("@ID ", id));
+                loginproc.Parameters.Add(new SqlParameter("@mobile_number", phone));
 
-            
 
-            conn.Open();
-            loginproc.ExecuteNonQuery();
-            conn.Close();
 
-            Response.Redirect("Gucian_home.aspx");
+                conn.Open();
+                loginproc.ExecuteNonQuery();
+                conn.Close();
 
+                Response.Write("<script language='javascript'>window.alert('Phone added successfully');window.location='Gucian_home.aspx';</script>");
+            }
+            catch(Exception)
+            {
+                Response.Write("<script>alert(' error,try again ');</script>");
+            }
 
 
 

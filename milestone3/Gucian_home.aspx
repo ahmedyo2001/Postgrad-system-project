@@ -22,6 +22,9 @@
     <br />
     <br />
     <asp:Button ID="Button4" runat="server" Text="manage publications" OnClick="Publication" />
+        <br />
+        <br />
+            <asp:Button ID="Button5" runat="server" Text="log out" OnClick="logout" />
 
 
       </form>

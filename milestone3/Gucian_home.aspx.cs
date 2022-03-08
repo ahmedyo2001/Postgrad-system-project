@@ -20,7 +20,7 @@ namespace milestone3
         {
             
 
-            Response.Redirect("Gucian_view_info.aspx");
+            Response.Redirect("view_info.aspx");
 
 
 
@@ -30,13 +30,13 @@ namespace milestone3
         protected void list_thesis(object sender, EventArgs e)
         {
 
-            Response.Redirect("list_thesis_Gucian.aspx");
+            Response.Redirect("list_thesis.aspx");
 
         }
 
         protected void progress_report(object sender, EventArgs e)
         {
-            Response.Redirect("progress_report_Gucian.aspx");
+            Response.Redirect("progress_report.aspx");
 
 
         }
@@ -44,9 +44,17 @@ namespace milestone3
         protected void Publication(object sender, EventArgs e)
         {
 
-            Response.Redirect("Gucian_publication.aspx");
+            Response.Redirect("pub.aspx");
 
         }
+        protected void logout(object sender, EventArgs e)
+        {
+
+            Response.Redirect("login.aspx");
+
+        }
+
+
 
 
     }

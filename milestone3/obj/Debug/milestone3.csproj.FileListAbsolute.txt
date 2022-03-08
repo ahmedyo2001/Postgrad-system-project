@@ -121,4 +121,10 @@ D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\roslyn\VBCSCom
 D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\guc\projects\database\milestone 3\milestone3-db\milestone3\obj\Debug\milestone3.csproj.CopyComplete
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.Base.dll
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.WebBrowser.dll
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.WebEngine.dll
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.Base.xml
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.WebBrowser.xml
+D:\guc\projects\database\milestone 3\milestone3-db\milestone3\bin\EO.WebEngine.xml
 D:\guc\projects\database\milestone 3\milestone3-db\milestone3\obj\Debug\milestone3.csprojAssemblyReference.cache
